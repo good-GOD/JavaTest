@@ -8,4 +8,4 @@ public class test1 extends Demo{
         System.out.println("9.58,18.65的最大值为："+maxdata(9.58,18.65));
     }
 }
-
+//请问这种多个类该如何提交？？我通过意见反馈咨询时并没有回复
