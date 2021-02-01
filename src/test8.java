@@ -1,6 +1,5 @@
 import java.io.PrintWriter;
 import java.io.StringWriter;
-import java.io.Writer;
 import java.util.Scanner;
 
 public class test8 {
