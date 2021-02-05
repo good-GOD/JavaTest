@@ -9,7 +9,7 @@ public class test2 {
             }
         }
         int [] odd2 = new int[12];
-        System.out.println("30以内从大到小的前12个奇数为：");
+        System.out.println("30以内从大到小的前12个奇数是：");
         for(int i=0;i<=11;i++){
             odd2[i]=odd1[i];
             System.out.println(odd2[i]);
