@@ -14,7 +14,7 @@ public class test18 {
                 t++;
             } else if (str.charAt(i) == ')') {
                 t++;
-                if ((!sk.empty()) && (sk.peek() == '(') && (t != 1))
+                if ((!sk.empty()) && (sk.peek() == '(') && (t != 1))    //t=1时说明第一个括号为“）”
                     sk.pop();
                 else
                     break;
