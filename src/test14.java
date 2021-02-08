@@ -6,17 +6,25 @@ public class test14 {
         Scanner sc = new Scanner(System.in);
         System.out.print("请输入路径：");
         File file= new File(sc.next());
-        if(file.isDirectory()) {
-            System.out.println("目录【" + file + "】中有以下文件：");
-            String[] fs = file.list();  //list()方法是返回某个目录下的所有文件和目录的文件名，返回的是String数组
-            for (String f : fs) {
-                System.out.println(f);
-            }
-            //        File[] fs = file.listFiles(); //listFiles()方法是返回某个目录下所有文件和目录的绝对路径，返回的是File数组
-            //        for(File f:fs){
-            //            System.out.println(f.getName());  //getname() 返回文件名
-        }
+        System.out.println("目录【" + file + "】中有以下文件：");
+        if(file.isDirectory())
+            method(file);
         else
-            System.out.println("此路径不存在");
+            System.out.println("此路径下无文件");
     }
-}
+
+    public static void method(File file){
+        if(file.isDirectory()) {
+            File[] fl = file.listFiles();   //获取file目录下所有文件、目录
+            for(File f : fl){
+                if(f.isDirectory())
+                    method(f);
+                else{
+                    String fs = f.getName();  //list()方法是返回某个目录下的所有文件和目录的文件名，返回的是String数组
+                    System.out.println(fs);
+                    }
+                }
+            }
+        }
+    }
+
