@@ -22,6 +22,6 @@ public class test9 {
         }
         //加上xxxxx
         sum = sum+s1*((int)Math.pow(10,b))+s;
-        System.out.println(sum);
+        System.out.println(s+"+"+s+s+"+"+s+s+s+"+"+s+s+s+s+"+"+s+s+s+s+s+"+"+s+s+s+s+"+"+s+s+s+"+"+s+s+"+"+s+"="+sum);
     }
 }
